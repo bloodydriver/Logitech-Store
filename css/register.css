@@ -1,0 +1,32 @@
+.avatar_box {
+    border: none;
+}
+
+#msg_txt {
+    position: absolute;
+    right: 0;
+    width: .75rem;
+    height: .3rem;
+}
+
+.on {
+    background-color: #eee !important;
+    color: #ccc !important;
+    cursor: not-allowed;
+}
+
+#msg_txt {
+    font-size: .12rem;
+    line-height: .3rem;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: .05rem;
+    background-color: red;
+    font-family: sans-serif !important;
+}
+
+.close_icon {
+    position: absolute;
+    right: 0.8rem !important;
+}

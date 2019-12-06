@@ -1,0 +1,191 @@
+html {
+    font-size: 100px;
+    background-color: #fff;
+    font-family: sans-serif !important;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: .37rem !important;
+    border-bottom: .01rem solid #eee !important;
+    box-sizing: border-box;
+}
+
+header .head-title {
+    color: #666;
+    font-size: .13rem;
+    line-height: 1;
+    font-family: sans-serif !important;
+}
+
+.mui-bar {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.mui-icon-arrowleft:before {
+    color: #666;
+    font-size: 0.18rem;
+}
+
+.zd_container {
+    padding-top: 0.7rem;
+    background-color: #fff;
+}
+
+.avatar_box {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid#e0e0e0;
+    border-radius: .1rem;
+}
+
+.zd_container .avatar_box img {
+    width: 100%;
+}
+
+#input_list {
+    width: 2.27rem;
+    margin: .4rem auto 0;
+}
+
+#input_list>li {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+#input_list>li input {
+    border: none;
+    padding: 0;
+    padding: 0 .05rem;
+    margin-bottom: .1rem;
+    color: #757575;
+    font-size: .12rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: sans-serif !important;
+}
+
+#input_list>li input::-webkit-input-placeholder {
+    color: #727272;
+    font-size: .12rem;
+}
+
+#input_list>li input:-moz-placeholder {
+    color: #727272;
+    font-size: .12rem;
+}
+
+#input_list>li input:-ms-input-placeholder {
+    color: #727272;
+    font-size: .12rem;
+}
+
+#input_list>li span {
+    font-size: .16rem;
+    color: #727272;
+}
+
+ul li .mui-icon-close {
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    font-size: .12rem !important;
+}
+
+#sub_icon {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    height: .35rem;
+    background-color: #e0e0e0;
+    border-radius: .05rem;
+    font-family: sans-serif !important;
+}
+
+.user_server {
+    margin: .15rem 0;
+    text-align: center;
+    transform: scale(0.9);
+}
+
+.user_server>a,
+.login_tit {
+    color: #666;
+    font-size: .12rem;
+    font-family: sans-serif !important;
+    text-align: center;
+}
+
+.line {
+    color: #666;
+    padding: 0 .05rem;
+}
+
+.login_tit::before {
+    position: absolute;
+    content: "";
+    border-top: .013333rem solid #e0e0e0;
+    width: 1rem;
+    top: 50%;
+    left: .1rem;
+    transform: translateY(50%);
+}
+
+.login_tit::after {
+    position: absolute;
+    content: "";
+    border-top: .013333rem solid #e0e0e0;
+    width: 1rem;
+    top: 50%;
+    right: .1rem;
+    transform: translateY(50%);
+}
+
+.login_tit {
+    position: relative;
+    font-weight: normal;
+    color: #999;
+    margin-top: .3rem;
+}
+
+.user_type {
+    display: flex;
+    margin-top: .2rem;
+}
+
+.user_type>a {
+    flex: 1;
+    text-align: center;
+}
+
+.user_type>a>span {
+    display: flex;
+    flex-direction: column;
+    font-size: .3rem;
+    color: #999;
+}
+
+.user_type>a:nth-child(1) span::after {
+    content: 'QQ登录';
+    font-size: .12rem;
+    margin-top: .1rem;
+}
+
+.user_type>a:nth-child(2) span::after {
+    content: '验证码登录';
+    font-size: .12rem;
+    margin-top: .1rem;
+}
+
+#code_img {
+    position: absolute;
+    right: 0;
+    width: .75rem;
+    height: .3rem;
+}

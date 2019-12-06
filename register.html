@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="css/icons-extra.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="mui-bar">
+        <a>
+            <span class="mui-icon mui-icon-arrowleft" style="transform: scale(0.9);"></span>
+        </a>
+        <h1 class="mui-title head-title">注册</h1>
+    </header>
+    <div class="zd_container">
+        <div class="avatar_box">
+            <img src="images/avatar.png" alt="" />
+        </div>
+        <form action=".php" method="POST">
+            <ul id="input_list">
+                <li>
+                    <span class="mui-icon mui-icon-phone"></span>
+                    <input type="text" name="phone" id="" placeholder="手机号" />
+                    <span class="mui-icon mui-icon-close"></span>
+                </li>
+                <li>
+                    <span class="mui-icon mui-icon-image"></span>
+                    <input type="text" name="code" placeholder="图形验证码" />
+                    <span class="mui-icon mui-icon-close close_icon"></span>
+                    <div id="code_img"></div>
+                </li>
+                <li>
+                    <span class="mui-icon mui-icon-star"></span>
+                    <input type="text" name="code" id="" placeholder="短信验证码" />
+                    <span class="mui-icon mui-icon-close close_icon"></span>
+                    <button id="msg_txt">获得验证码</button>
+                </li>
+                <li>
+                    <span class="mui-icon mui-icon-locked"></span>
+                    <input type="password" name="password" id="" placeholder="密码" />
+                    <span class="mui-icon mui-icon-close"></span>
+                </li>
+                <input type="submit" value="注册" id="sub_icon" />
+            </ul>
+            <div class="user_server">
+                <a href="login.html">去登录</a>
+                <span class="line">|</span>
+                <a href="javascript:void(0)">找回密码</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/Vcode.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
