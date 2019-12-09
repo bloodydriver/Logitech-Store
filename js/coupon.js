@@ -49,6 +49,8 @@ var h3=document.getElementsByClassName("w_coupon-context")[0];
 function heightchange(){
     var doheight=document.documentElement.clientHeight;
     h3.style.height=(doheight-h1-h2-10)+"px";
+    console.log(6666,h3);
+    console.log(555,doheight-h1-h2-10);
 }
 heightchange()
 window.onresize=function(){

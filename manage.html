@@ -40,11 +40,13 @@
                 <span class="w_mange-sp2">13288888888</span>
             </a>
         </div>
-        <div class="w_mange-list" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block">
+        <a href="#popover" id="openPopover" class="mui-btn w_mange-alist">
+        <div class="w_mange-list">
             <span class="w_mange-sp1">性别</span>
             <span class="w_mange-sp2">男</span>
             <span class="mui-icon mui-icon-forward w_manage-spanright"></span>
         </div>
+    </a>
         <div class="w_mange-list" id="datebox03" >
             <span class="w_mange-sp1">生日</span>
             <span class="w_mange-sp2" id="w_mange-time">2019-07-09</span>
@@ -62,16 +64,22 @@
     </div>
     <div id="popover" class="mui-popover">
             <ul class="mui-table-view">
-              <li class="mui-table-view-cell"><a href="#">男</a></li>
-              <li class="mui-table-view-cell"><a href="#">Item2</a></li>
-              <li class="mui-table-view-cell"><a href="#">Item3</a></li>
-              <li class="mui-table-view-cell"><a href="#">Item4</a></li>
-              <li class="mui-table-view-cell"><a href="#">Item5</a></li>
+              <li class="mui-table-view-cell">男</li>
+              <li class="mui-table-view-cell">女</li>
+              <li class="mui-table-view-cell">保密</li>
+              <li class="mui-table-view-cell">取消</li>
             </ul>
           </div>
     <script src="js/mui.min.js"></script>
     <script src="js/mui.picker.js"></script>
     <script src="js/mui.dtpicker.js"></script>
     <script src="js/manage.js"></script>
+    <script>
+    var getvalue=document.getElementsByClassName("mui-table-view")[0];
+    getvalue.addEventListener("touchstart",function(){
+          console.log(222,this.children[0]);
+          
+    },false)
+    </script>
 </body>
 </html>

@@ -43,6 +43,10 @@ value1[2].onfocus=function(){
     }
     rem.classList.remove("displynone")
 }
+value1[0].on=function(){
+    console.log(33333);
+    
+}
 //编辑收货地址的输入是否正确判断
 var butt=document.getElementsByClassName("w_address-butt")[0];
 var value2=document.getElementsByClassName("w_value2")[0];
