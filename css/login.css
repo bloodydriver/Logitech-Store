@@ -90,7 +90,7 @@ header .head-title {
 }
 
 ul li .mui-icon-close {
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 25%;
     right: 0;
@@ -187,5 +187,5 @@ ul li .mui-icon-close {
     position: absolute;
     right: 0;
     width: .75rem;
-    height: .3rem;
+    height: auto;
 }

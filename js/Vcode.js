@@ -4,8 +4,8 @@
         this.options = { //默认options参数值
             id: "code_img", //容器Id
             canvasId: "verifyCanvas", //canvas的ID
-            width: "0.75rem", //默认canvas宽度
-            height: "0.3rem", //默认canvas高度
+            width: "100%", //默认canvas宽度
+            height: "100%", //默认canvas高度
             type: "blend", //图形验证码默认类型blend:数字字母混合类型、number:纯数字、letter:纯字母
             code: "",
         }
