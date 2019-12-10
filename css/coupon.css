@@ -163,7 +163,6 @@ body {
     height: 100%;
     padding: .2rem 0;
 }
-
 .w_add-list2 {
     width: 20%;
     float: right;
@@ -186,21 +185,30 @@ body {
 .w_address-sp1{
     line-height: .37rem;
     width: 30%;
-    display: inline-block;
     font-size: .12rem;
+    float: left;
+}
+.mui-icon-clear{
+    top: 0!important;;
+    color: #999!important;
+    width: auto!important;
 }
 .w_address-sp2 {
     display: inline-block;
-    padding: 0 .1rem;
-    width: 60%;
+    width: 70%;
     box-sizing: border-box;
-    line-height: .37rem
+    line-height: .37rem;
 }
 .w_address-sp2 input {
     border: 0;
     font-size: .1rem;
     box-sizing: border-box;
     width: 100%;
+    background: #fff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
 }
 .w_address-sp3 {
     float: right;

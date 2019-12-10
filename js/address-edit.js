@@ -17,33 +17,8 @@
         }, false);
     });
 })(mui, document);
-//编辑收货地址的输入控件显示和取消
-var value1=document.getElementsByClassName("w_address-value1");
-value1[0].onfocus=function(){
-    var rem=this.parentNode.parentNode.children[2] 
-    rem.onclick=function(){
-        this.parentNode.children[1].children[0].value="";
-        this.classList.add("displynone");
-    }
-    rem.classList.remove("displynone")
-}
-value1[1].onfocus=function(){
-    var rem=this.parentNode.parentNode.children[2] 
-    rem.onclick=function(){
-        this.parentNode.children[1].children[0].value="";
-        this.classList.add("displynone");
-    }
-    rem.classList.remove("displynone")
-}
-value1[2].onfocus=function(){
-    var rem=this.parentNode.parentNode.children[2] 
-    rem.onclick=function(){
-        this.parentNode.children[1].children[0].value="";
-        this.classList.add("displynone");
-    }
-    rem.classList.remove("displynone")
-}
 //编辑收货地址的输入是否正确判断
+var value1=document.getElementsByClassName("w_address-value1");
 var butt=document.getElementsByClassName("w_address-butt")[0];
 var value2=document.getElementsByClassName("w_value2")[0];
 butt.onclick=function(){
