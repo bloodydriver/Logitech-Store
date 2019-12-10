@@ -1,0 +1,117 @@
+.x-head>div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.x-head {
+    height: 2.9rem;
+    padding: 0 .4rem;
+    background: url(../images/mine-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: .27rem;
+}
+.x-head a {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.x-head .x-head-img img {
+    width: 100%;
+    height: auto;
+}
+.x-head .x-head-user {
+    color: #fff;
+    margin-left: .36rem;
+}
+.x-head-user p {
+    color: #fff;
+    font-size: .4rem;
+    margin-bottom: .25rem;
+}
+.x-head-user span {
+    display: flex;
+    height: .5rem;
+    padding: 0 .27rem;
+    align-items: center;
+    border: .027rem solid #fff;
+    border-radius: .27rem;
+}
+.x-main {   
+    background: #fff;
+}
+.x-order {
+    display: flex;
+    height: 1.4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .27rem;
+}
+.x-my-order {
+    color: #666;
+}
+.x-order i {
+    font-size: .5rem;
+    color: #999;
+}
+.x-my-all {
+    color: #999;
+}
+.x-border-top {
+    border-top: .03rem solid #e6e6e6
+}
+.x-list-nav ul {
+    display: flex;
+    padding: .37rem 0;
+}
+.x-list-nav ul li {
+    flex: 1;
+}
+.x-item-icon, .x-item-text {
+    position: relative;
+    text-align: center;
+}
+.x-item-icon i {
+    color: #fd2645;
+}
+.x-item-icon span {
+    position: absolute;
+    top: -.1rem;
+    right: 30%;
+    width: .4rem;
+    height: .4rem;
+    line-height: .4rem;
+    border-radius: .2rem;
+    background: #fd2645;
+    color: #fff;
+}
+.x-item-text {
+    color: #333;
+    font-size: .37rem;
+    margin: .15rem 0 0 0;
+}
+.x-line-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #666;
+    padding: 0 .27rem;
+    height: 1.4rem;
+}
+.x-content-left, .x-content-right {
+    display: flex;
+    align-items: center;
+}
+.x-content-left i {
+    font-size: .61rem;
+    margin-right: .43rem;
+}
+.x-content-right i {
+    color: #999;
+    font-size: .6rem;
+}
+.x-content-right p {
+    color: #fd2645;
+}
+.x-bind-tel span, .x-bind-tel p {
+    color: #999;
+}
