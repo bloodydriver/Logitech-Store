@@ -23,16 +23,16 @@
         <div class="avatar_box">
             <img src="images/avatar.png" alt="" />
         </div>
-        <form action=".php" method="POST">
+        <form action=".php" method="POST" id="reg_form">
             <ul id="input_list">
                 <li>
                     <span class="mui-icon mui-icon-phone"></span>
-                    <input type="text" name="phone" id="" placeholder="手机号" />
+                    <input type="text" name="phone" id="phone" placeholder="手机号"  maxlength="11" />
                     <span class="mui-icon mui-icon-close"></span>
                 </li>
                 <li>
                     <span class="mui-icon mui-icon-image"></span>
-                    <input type="text" name="code" placeholder="图形验证码" />
+                    <input type="text" name="code" placeholder="图形验证码" id="Code_input"  maxlength="4" />
                     <span class="mui-icon mui-icon-close close_icon"></span>
                     <div id="code_img"></div>
                 </li>
@@ -44,7 +44,7 @@
                 </li>
                 <li>
                     <span class="mui-icon mui-icon-locked"></span>
-                    <input type="password" name="password" id="" placeholder="密码" />
+                    <input type="password" name="password" id="psw" placeholder="密码" />
                     <span class="mui-icon mui-icon-close"></span>
                 </li>
                 <input type="submit" value="注册" id="sub_icon" />
@@ -57,7 +57,6 @@
         </form>
     </div>
     <script src="js/mui.min.js"></script>
-    <script src="js/zepto.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/Vcode.js"></script>
     <script src="js/register.js"></script>
@@ -74,7 +73,7 @@
                         } else {
                             close_icon.style.display = "block";
                         }
-                        if (li[0].children[1].value != "") {
+                        if (li[0].children[1].value != "" && li[1].children[1].value != "") {
                             sub_btn.style.background = "red";
                         } else {
                             sub_btn.style.background = "#e0e0e0";

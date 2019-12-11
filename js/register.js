@@ -18,36 +18,26 @@ function btnCheck(e) {
     }, 1000);
 }
 
-
 var list = document.getElementById("input_list");
 var close = document.getElementsByClassName("mui-icon-close");
-
-for (var i = 0; i < close.length; i++) {
-    close[i].index = i;
-}
-
-// console.dir(close);
-// list.addEventListener("keyup",function (e) {
-//     e.target.nextElementSibling.style.visibility="visible";
-//     if(!e.target.value) {
-//         e.target.nextElementSibling.style.visibility="hidden";
-//     }
-// }) 
-
-// list.addEventListener("tap",function (e) {
-//     e.target.previousElementSibling.value="";
-//     close.style.visibility="hidden";
-//     console.log(close)
-// }) 
-
-
+var reg_form = document.getElementById("reg_form");
 var verifyCode = new GVerify("code_img");
-// document.getElementById("code_img").onclick = function () {
-//     var res = verifyCode.validate(document.getElementById("sub_icon").value);
-//     if (res) {
-//         alert("验证正确");
-//     } else {
-//         alert("验证码错误");
-//     }
-// }
-
+var sub_icon = document.getElementById("sub_icon");
+var phone = document.getElementById("phone")
+var psw = document.getElementById("psw")
+var phoneNumReg = /^1[3|4|5|7|8]\d{9}$/
+reg_form.addEventListener("submit",function(e) {
+    var res = verifyCode.validate(document.getElementById("Code_input").value);
+    if(!phoneNumReg.test(phone.value)) {
+        mui.toast('请输入有效的手机号码');
+        e.preventDefault()
+    }else if(!res) {
+        mui.toast('验证码错误');
+        e.preventDefault()
+    }else if(psw.value.length <= 6) {
+        mui.toast('密码不小于6位');
+        e.preventDefault()
+    }else {
+        return
+    }
+})

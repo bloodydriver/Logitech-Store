@@ -30,3 +30,18 @@
     position: absolute;
     right: 0.8rem !important;
 }
+.mui-toast-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    
+}
+
+.mui-toast-message {
+    margin: 0;
+    padding: .05rem .08rem;
+    font-size: .12rem;
+    border-radius: 0;
+    font-family: sans-serif;
+}
