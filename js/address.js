@@ -6,7 +6,7 @@ var addul=document.getElementsByClassName("w_address-ul")[0];
         <li class="w_address-li">
             <div class="w_add-list1">
                 <span class="w_addlist-sp1">${window.localStorage.vlue1}</span>
-                <span class="w_addlist-sp2">${window.localStorage.vlue2}</span>
+                <span class="w_addlist-sp2">${window.localStorage.vlue2.substr(0,3)+"****"+window.localStorage.vlue2.substr(7)}</span> 
                 <p class="w_addlist-p">${window.localStorage.value2}${window.localStorage.vlue3}</p>
             </div>
             <div class="w_add-list2">

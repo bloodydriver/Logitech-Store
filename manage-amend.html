@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mui.css">
+    <link rel="stylesheet" href="css/mui.picker.css">
+    <link rel="stylesheet" href="css/coupon.css">
+    <title>修改用户名https://store.logitech.com.cn/Wap</title>
+    <script>
+            function getWidth() {
+                var html = document.getElementsByTagName("html")[0]
+                html.style.fontSize=(html.clientWidth/320*100)+"px"
+            }
+            getWidth()
+            window.onresize=function () {
+               getWidth()
+            }
+    </script>
+</head>
+<body>
+    <div class="context">
+        <div class="w_top">
+           <a href="manage.html">
+               <span class="mui-icon mui-icon-back"></span>
+            </a>
+           <h2>修改用户名</h2>
+        </div>
+    </div>
+    <div class="w_user-input">
+        <div class="mui-input-row w_user-div">
+           <input type="search" class="mui-input-clear w_user-inval" placeholder="请输入用户名">
+        </div> 
+    </div>
+    <div class="w_user-button">
+        <button>提交</button>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/manage-amend.js"></script>
+</body>
+</html>

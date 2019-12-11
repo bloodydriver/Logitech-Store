@@ -35,15 +35,15 @@
             <span class="mui-icon mui-icon-forward w_manage-spi"></span>
         </div>
         <div class="w_mange-list">
-            <a href="">
+            <a href="manage-amend.html">
                 <span class="w_mange-sp1">用户名</span>
-                <span class="w_mange-sp2">13288888888</span>
+                <span class="w_mange-sp2 w_mange-val"></span>
             </a>
         </div>
         <a href="#popover" id="openPopover" class="mui-btn w_mange-alist">
         <div class="w_mange-list">
             <span class="w_mange-sp1">性别</span>
-            <span class="w_mange-sp2">男</span>
+            <span class="w_mange-sp2 w_getvalue-view">男</span>
             <span class="mui-icon mui-icon-forward w_manage-spanright"></span>
         </div>
     </a>
@@ -74,12 +74,5 @@
     <script src="js/mui.picker.js"></script>
     <script src="js/mui.dtpicker.js"></script>
     <script src="js/manage.js"></script>
-    <script>
-    var getvalue=document.getElementsByClassName("mui-table-view")[0];
-    getvalue.addEventListener("touchstart",function(){
-          console.log(222,this.children[0]);
-          
-    },false)
-    </script>
 </body>
 </html>

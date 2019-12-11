@@ -134,17 +134,23 @@ body {
 .w_ul3-li img {
     width: .5rem;
 }
-.w_address-butt,.w_address-butt1 {
+.w_address-butt,.w_address-butt1,.w_address-clear {
     padding: 0 .1rem;
     margin-top: .5rem;
  }
-.w_address-butt button,.w_address-butt1 button {
+ .w_address-clear {
+     margin-top: .1rem;
+ }
+.w_address-butt button,.w_address-butt1 button,.w_address-clear button {
     height: .37rem;
     font-size: .128rem;
     width: 100%;
     border-radius: .066667rem;
     background: #fd2645;
     color: #fff;
+}
+.w_address-clear button{
+    background: #d3d3d3
 }
 .w_address-cont  {
     font-size: .128rem;
@@ -190,7 +196,7 @@ body {
 }
 .mui-icon-clear{
     top: 0!important;;
-    color: #999!important;
+    color: #DADADA!important;
     width: auto!important;
 }
 .w_address-sp2 {
@@ -220,6 +226,7 @@ body {
     display: block;
     font-size: .128rem;
 }
+/* 修改收货地址样式*/
 .mui-btn-block {
     font-size: inherit;
     margin-bottom: 0;
@@ -240,7 +247,36 @@ body {
 .mui-toast-container {
     bottom: -50px;
 }
-
+.mui-popup-button:last-child {
+    border-radius: .133333rem;
+    background: #fd2645;
+    color: #fff;
+    border: .016667rem solid #fd2645;
+    box-sizing: border-box;
+    font-size: .128rem;
+}
+.mui-popup-button:first-child {
+    border: .016667rem solid #fd2645;
+    border-radius: .133333rem;
+    margin-right: .1rem;
+    font-size: .128rem;
+    color: #333;
+}
+.mui-popup-title,.mui-popup-inner:after,.mui-popup-button:after {
+    display: none;
+}
+.mui-popup-title + .mui-popup-text {
+    font-size: .1rem;
+}
+.mui-popup-buttons {
+    background: #fff;
+    padding: .1rem;
+    box-sizing: content-box;
+}
+.mui-popup.mui-popup-in {
+    padding-bottom: .1rem;
+    background: #fff;
+}
 /* 账户管理的样式 */
 .w_manage-cont {
     padding: .17rem 0 0 0;
@@ -308,6 +344,46 @@ body {
     border: 0;
     padding: 0;
     font-size: inherit;
+}
+.mui-btn-blue {
+    background-color: #eee;
+    color: #007aff;
+    border: 0;
+}
+.mui-dtpicker-header button {
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 0;
+    background-color: #eee;
+}
+/* 修改用户名样式*/
+.w_user-button {
+    padding: 0 .1rem;
+    margin-top: .5rem;
+}
+.w_user-button button {
+    color: #fff;
+    background-color: #fd2645;
+    text-align: center;
+    line-height: .37rem;
+    font-size: .128rem;
+    width: 100%;
+}
+.w_user-input {
+    border-top: 1px solid #f4f4f4;
+    background: #fff;
+} 
+.w_user-div {
+    padding: 0 .1rem;
+}
+.w_user-div input{
+    background: #fff;
+    text-align: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: .128rem;
+    height: .37rem;
+    float: left;
 }
 /* 更换手机号样式 */
 .w_change-cont{
