@@ -27,34 +27,34 @@
         <div class="x-order">
             <div class="x-my-order">我的订单</div>
             <div>
-                <a class="x-my-all" href="">查看全部</a>
+                <a class="x-my-all all-order" href="my-order.html">查看全部</a>
                 <i class="mui-icon mui-icon-arrowright"></i>
             </div>
         </div>
         <div class="x-list-nav x-border-top">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="my-order.html" class="all-order">
                         <div class="x-item-icon">
                             <span>1</span>
                             <i class="mui-icon iconfont icon-daifukuan2"></i>
                         </div>                        
-                        <p class="x-item-text">代付款</p>
+                        <p class="x-item-text">待付款</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="my-order.html" class="all-order">
                         <div class="x-item-icon">
                             <p style="position: relative;">
                                 <span>0</span>
                             </p>
                             <i class="mui-icon iconfont icon-baoguo_yidong_o"></i>
                         </div>
-                        <p class="x-item-text">代发货</p>
+                        <p class="x-item-text">待发货</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="my-order.html" class="all-order">
                         <div class="x-item-icon">
                             <span>0</span>
                             <i class="mui-icon iconfont icon-weibiaoti-"></i>
@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="my-order.html" class="all-order">
                         <div class="x-item-icon">
                             <span>0</span>
                             <i class="mui-icon iconfont icon-pingjia"></i>
@@ -116,5 +116,15 @@
     <footer class="x-foot">
 
     </footer>
+    <script>
+    var order = document.getElementsByClassName("all-order");
+    for(var i=0; i<order.length; i++) {
+        order[i].index=i;
+        order[i].onclick = function() {
+            localStorage.setItem("index",this.index);
+        }
+    }
+    
+    </script>
 </body>
 </html>

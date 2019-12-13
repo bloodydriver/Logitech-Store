@@ -12,6 +12,10 @@ body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite
 	font-family: sans-serif;
 	box-sizing: border-box;
 }
+img {
+	width: 100%;
+	height: auto;
+}
 h1,h2,h3,h4,h5,h6,em,i {
 	font-style:normal;
 }
