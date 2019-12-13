@@ -23,7 +23,7 @@
         <div class="avatar_box">
             <img src="images/avatar.png" alt="" />
         </div>
-        <form action=".php" method="POST" id="reg_form">
+        <form action="register.php" method="POST" id="sub_form">
             <ul id="input_list">
                 <li>
                     <span class="mui-icon mui-icon-phone"></span>
@@ -57,41 +57,20 @@
         </form>
     </div>
     <script src="js/mui.min.js"></script>
-    <script src="js/login.js"></script>
     <script src="js/Vcode.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/register.js"></script>
     <script>
-        var li = document.getElementById("input_list").children;
-        var sub_btn = document.getElementById("sub_icon")
-        for (var i = 0; i < li.length; i++) {
-            li[i].addEventListener("keydown", function (e) {
-                if (e.target.nodeName == "INPUT") {
-                    var close_icon = e.target.nextElementSibling;
-                    setTimeout(function () {
-                        if (e.target.value == "") {
-                            close_icon.style.display = "none";
-                        } else {
-                            close_icon.style.display = "block";
-                        }
-                        if (li[0].children[1].value != "" && li[1].children[1].value != "") {
-                            sub_btn.style.background = "red";
-                        } else {
-                            sub_btn.style.background = "#e0e0e0";
-                        }
-                        close_icon.addEventListener("tap", function () {
-                            e.target.value = "";
-                            close_icon.style.display = "none";
-                            if (li[0].children[1].value != "") {
-                                sub_btn.style.background = "red";
-                            } else {
-                                sub_btn.style.background = "#e0e0e0";
-                            }
-                        })
-                    }, 200)
-                }
-            })
+        var verifyCode = new GVerify("code_img");
+        var registStatus = localStorage.getItem("registStatus")
+
+        window.onload = function () {
+            var registStatus = localStorage.getItem("registStatus")
+            if (registStatus == "registed") {
+                mui.toast('手机号已注册');
+                localStorage.clear();
+            }
         }
     </script>
 </body>
-
 </html>

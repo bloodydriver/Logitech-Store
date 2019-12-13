@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/category.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tabSwitch">
+        <ul id="tab_types">
+            <li>鼠标</li>
+            <li>键盘</li>
+            <li>键鼠套装</li>
+            <li>耳机耳麦</li>
+            <li>音箱</li>
+            <li>视频会议</li>
+            <li>模拟器/方向盘</li>
+            <li>电脑周边</li>
+            <li>鼠标垫</li>
+            <li>配件</li>
+        </ul>
+        <ul id="tab_content">
+            <li>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>游戏鼠标</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G402G533-01.png" alt="" />
+                                    <p class="category_info">G402鼠标+G533键盘</p>
+                                    <p class="category_price">¥ 1108</p>
+                                </a>
+                                <div class="category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>激光鼠标</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-27/NEW_XL/b-anywhere2s-01.png"
+                                        alt="" />
+                                    <p class="category_info">Anywhere 2S</p>
+                                    <p class="category_price">¥ 489</p>
+                                </a>
+                                <div class="category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>蓝牙鼠标</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box swiper-wrapper">
+                            <a href="" class="category_container swiper-slide">
+                                <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png"
+                                    alt="" />
+                                <p class="category_info">Master2S</p>
+                                <p class="category_price">¥ 589</p>
+                            </a>
+                            <a href="" class="category_container swiper-slide">
+                                <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png"
+                                    alt="" />
+                                <p class="category_info">Master2S</p>
+                                <p class="category_price">¥ 589</p>
+                            </a>
+                            <a href="" class="category_container swiper-slide">
+                                <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png"
+                                    alt="" />
+                                <p class="category_info">Master2S</p>
+                                <p class="category_price">¥ 589</p>
+                            </a>
+                            <div class="category_more swiper-slide">
+                                <a href="">查看更多 》</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+    </div>
+
+    <script src="js/mui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        function getWidth() {
+            var html = document.getElementsByTagName("html")[0];
+            html.style.fontSize = (html.clientWidth / 320) * 100 + "px";
+        }
+        getWidth();
+        window.onresize = function () {
+            getWidth();
+        };
+
+        var mySwiper = new Swiper('.swiper-container', {
+            freeModeMomentum: false,
+        })
+    </script>
+</body>
+
+</html>

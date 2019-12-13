@@ -22,25 +22,25 @@
         <div class="avatar_box">
             <img src="images/avatar.png" alt="" />
         </div>
-        <form action=".php" method="POST">
+        <form action="login.php" method="POST" id="sub_form">
             <ul id="input_list">
                 <li>
                     <span class="mui-icon mui-icon-phone"></span>
-                    <input type="text" name="phone" id="" placeholder="手机号" maxlength="11" />
+                    <input type="text" name="phone" id="phone" placeholder="手机号"  maxlength="11" />
                     <span class="mui-icon mui-icon-close"></span>
                 </li>
                 <li>
                     <span class="mui-icon mui-icon-image"></span>
-                    <input type="text" name="code" id="Code_input" placeholder="图形验证码"  maxlength="4" />
-                    <span class="mui-icon mui-icon-close" style="right: 0.8rem"></span>
+                    <input type="text" name="code" placeholder="图形验证码" id="Code_input" maxlength="4" />
+                    <span class="mui-icon mui-icon-close close_icon"></span>
                     <div id="code_img"></div>
                 </li>
                 <li>
                     <span class="mui-icon mui-icon-locked"></span>
-                    <input type="password" name="password" id="" placeholder="密码" />
+                    <input type="password" name="password" id="psw" placeholder="密码" />
                     <span class="mui-icon mui-icon-close"></span>
                 </li>
-                <input type="submit" value="登录" id="sub_icon" />
+                <input type="submit" value="注册" id="sub_icon" />
             </ul>
             <div class="user_server">
                 <a href="register.html">注册账号</a>
@@ -63,35 +63,16 @@
     <script src="js/login.js"></script>
     <script>
         var verifyCode = new GVerify("code_img");
-        var li = document.getElementById("input_list").children;
-        var sub_btn = document.getElementById("sub_icon")
-        for (var i = 0; i < li.length; i++) {
-            li[i].addEventListener("keydown", function (e) {
-                if (e.target.nodeName == "INPUT") {
-                    var close_icon = e.target.nextElementSibling;
-                    setTimeout(function () {
-                        if (e.target.value == "") {
-                            close_icon.style.display = "none";
-                        } else {
-                            close_icon.style.display = "block";
-                        }
-                        if (li[0].children[1].value != "") {
-                            sub_btn.style.background = "red";
-                        } else {
-                            sub_btn.style.background = "#e0e0e0";
-                        }
-                        close_icon.addEventListener("tap", function () {
-                            e.target.value = "";
-                            close_icon.style.display = "none";
-                            if (li[0].children[1].value != "") {
-                                sub_btn.style.background = "red";
-                            } else {
-                                sub_btn.style.background = "#e0e0e0";
-                            }
-                        })
-                    }, 0)
-                }
-            })
+        window.onload = function () {
+            var userStatus = localStorage.getItem("userStatus");
+            if (userStatus == "userOK") {
+                mui.toast('注册成功');
+                localStorage.clear();
+            }
+            if (userStatus == "loginError") {
+                mui.toast('用户名或密码错误');
+                localStorage.clear();
+            }
         }
     </script>
 </body>
