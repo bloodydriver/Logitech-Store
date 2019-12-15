@@ -68,11 +68,10 @@ sub_form.addEventListener("submit", function (e) {
     if (!phoneNumReg.test(phone.value)) {
         mui.toast('请输入有效的手机号码');
         e.preventDefault()
+    } else if (!res) {
+        mui.toast('验证码错误');
+        e.preventDefault()
     } 
-    // else if (!res) {
-    //     mui.toast('验证码错误');
-    //     e.preventDefault()
-    // } 
     else if (psw.value.length <= 6) {
         mui.toast('密码不小于6位');
         e.preventDefault()

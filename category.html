@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/mui.css" />
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/category.css" />
     <title>Document</title>
 </head>
 
 <body>
+    <div class="m-search">
+        <div class="m-search-input" id="m-search-input">
+            <span class="m-search-link iconfont">&nbsp;&nbsp;&nbsp; 搜索您想要的商品</span>
+
+        </div>
+        <span class="iconfont search-cont"></span>
+    </div>
     <div id="tabSwitch">
         <ul id="tab_types">
-            <li>鼠标</li>
+            <li class="tab_active">鼠标</li>
             <li>键盘</li>
             <li>键鼠套装</li>
             <li>耳机耳麦</li>
@@ -30,20 +38,22 @@
                 <div class="category_list">
                     <div class="category_tit">
                         <h3>游戏鼠标</h3>
-                        <a href="">
+                        <a href="#">
                             <span class="mui-icon mui-icon-arrowright"></span>
                         </a>
                     </div>
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="category_box swiper-slide">
-                                <a href="" class="category_container">
-                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G402G533-01.png" alt="" />
+                        <div class="category_box swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G402G533-01.png" />
                                     <p class="category_info">G402鼠标+G533键盘</p>
                                     <p class="category_price">¥ 1108</p>
                                 </a>
+                            </div>
+                            <div class="swiper-slide">
                                 <div class="category_more">
-                                    <a href="">查看更多 》</a>
+                                    <a href="#">查看更多 》</a>
                                 </div>
                             </div>
                         </div>
@@ -59,12 +69,14 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="category_box swiper-slide">
-                                <a href="" class="category_container">
-                                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-27/NEW_XL/b-anywhere2s-01.png"
-                                        alt="" />
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-27/NEW_XL/b-anywhere2s-01.png" />
                                     <p class="category_info">Anywhere 2S</p>
                                     <p class="category_price">¥ 489</p>
                                 </a>
+                            </div>
+                            <div class="category_box swiper-slide">
                                 <div class="category_more">
                                     <a href="">查看更多 》</a>
                                 </div>
@@ -81,43 +93,837 @@
                     </div>
                     <div class="swiper-container">
                         <div class="category_box swiper-wrapper">
-                            <a href="" class="category_container swiper-slide">
-                                <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png"
-                                    alt="" />
-                                <p class="category_info">Master2S</p>
-                                <p class="category_price">¥ 589</p>
-                            </a>
-                            <a href="" class="category_container swiper-slide">
-                                <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png"
-                                    alt="" />
-                                <p class="category_info">Master2S</p>
-                                <p class="category_price">¥ 589</p>
-                            </a>
-                            <a href="" class="category_container swiper-slide">
-                                <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png"
-                                    alt="" />
-                                <p class="category_info">Master2S</p>
-                                <p class="category_price">¥ 589</p>
-                            </a>
-                            <div class="category_more swiper-slide">
-                                <a href="">查看更多 》</a>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">Master2S</p>
+                                        <p class="category_price">¥ 589</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">Anywhere 2S</p>
+                                        <p class="category_price">¥ 489</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">MX ERGO</p>
+                                        <p class="category_price">¥ 699</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="#">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>无线鼠标</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">M188无线鼠标</p>
+                                        <p class="category_price">¥ 128</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">MX ERGO</p>
+                                        <p class="category_price">¥ 699</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="#">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>有线鼠标</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">M105有线鼠标</p>
+                                        <p class="category_price">¥ 59</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img
+                                            src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-01-07/NEW_XL/master2sh1.png" />
+                                        <p class="category_info">MX ERGO</p>
+                                        <p class="category_price">¥ 59</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="#">查看更多 》</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135002_3703.jpg" />
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>游戏键盘</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G613-01.png" />
+                                    <p class="category_info">G613无线键盘</p>
+                                    <p class="category_price">¥ 799</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>无线键盘</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/K230-01.png" />
+                                    <p class="category_info">K230无线键盘</p>
+                                    <p class="category_price">¥ 99</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/K480M330-01.png" />
+                                    <p class="category_info">K480键盘+M330鼠标</p>
+                                    <p class="category_price">¥ 324</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/K780M720-01.png" />
+                                    <p class="category_info">K780键盘+M720鼠标</p>
+                                    <p class="category_price">¥ 768</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>有线键盘</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img src="https://images.wincheers.net/UpLoad/logitech/xx/K310-01.png" />
+                                        <p class="category_info">K310键盘</p>
+                                        <p class="category_price">¥ 169</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img src="https://images.wincheers.net/UpLoad/logitech/xx/K120-01.png" />
+                                        <p class="category_info">K120有线键盘</p>
+                                        <p class="category_price">¥ 49</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container">
+                                    <a href="#">
+                                        <img src="https://images.wincheers.net/UpLoad/logitech/xx/K100-01.png" />
+                                        <p class="category_info">K100有线键盘</p>
+                                        <p class="category_price">¥ 45</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="#">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214134858_9826.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>无线键鼠套装</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/w-MK365-01.png" />
+                                    <p class="category_info">MK365键鼠套装</p>
+                                    <p class="category_price">¥ 299</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/r-MK365-01.png" />
+                                    <p class="category_info">MK365键鼠套装</p>
+                                    <p class="category_price">¥ 299</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/b-MK365-01.png" />
+                                    <p class="category_info">MK365键鼠套装</p>
+                                    <p class="category_price">¥ 299</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>有线键鼠套装</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-15/NEW_XL/b-MK120-01.png" />
+                                    <p class="category_info">MK120键鼠套装</p>
+                                    <p class="category_price">¥ 299</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/K480M330-01.png" />
+                                    <p class="category_info">MK120键鼠套装</p>
+                                    <p class="category_price">¥ 299</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/K780M720-01.png" />
+                                    <p class="category_info">MK120键鼠套装</p>
+                                    <p class="category_price">¥ 299</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135245_8674.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>电脑耳机麦克风</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/H340-01.png" />
+                                    <p class="category_info">H340耳麦</p>
+                                    <p class="category_price">¥ 149</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/H150r01.png" />
+                                    <p class="category_info">H150耳麦</p>
+                                    <p class="category_price">¥ 129</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/H151-01.png" />
+                                    <p class="category_info">H151耳麦</p>
+                                    <p class="category_price">¥ 129</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>游戏耳机麦克风</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-05-09/NEW_XL/1.png" />
+                                    <p class="category_info">G633S</p>
+                                    <p class="category_price">¥ 1149</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-12/NEW_XL/a10l01.png" />
+                                    <p class="category_info">Astro A10电竞耳机</p>
+                                    <p class="category_price">¥ 599</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G433blue01.png" />
+                                    <p class="category_info">G433耳机</p>
+                                    <p class="category_price">¥ 799</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>入耳式耳机</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/UE-Live01.png" />
+                                    <p class="category_info">UE Live</p>
+                                    <p class="category_price">¥ 1149</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-12/NEW_XL/a10l01.png" />
+                                    <p class="category_info">Astro A10电竞耳机</p>
+                                    <p class="category_price">¥ 19999</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/Freedom2-black-01.png" />
+                                    <p class="category_info">Freedom2</p>
+                                    <p class="category_price">¥ 699</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135605_4005.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>音箱</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/MXSound-01.png" />
+                                    <p class="category_info">MX Sound</p>
+                                    <p class="category_price">¥ 899</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-18/NEW_XL/Z906-01.png" />
+                                    <p class="category_info">Z906音箱</p>
+                                    <p class="category_price">¥ 2499</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G560-01.png" />
+                                    <p class="category_info">G560音箱</p>
+                                    <p class="category_price">¥ 1699</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>蓝牙音箱</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/nyg-wonderboom-01.png" />
+                                    <p class="category_info">WONDERBOOM音箱</p>
+                                    <p class="category_price">¥ 899</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-12/NEW_XL/a10l01.png" />
+                                    <p class="category_info">Wonderboom音箱</p>
+                                    <p class="category_price">¥ 799</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/MXSound-01.png" />
+                                    <p class="category_info">MX Sound</p>
+                                    <p class="category_price">¥ 899</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135530_0982.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>摄像头</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/CC4900e-01.png" />
+                                    <p class="category_info">CC4900E</p>
+                                    <p class="category_price">¥ 17999</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/BCC950-01.png" />
+                                    <p class="category_info">BCC950摄像头</p>
+                                    <p class="category_price">¥ 1999</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/C1000e01.png" />
+                                    <p class="category_info">C1000e摄像头</p>
+                                    <p class="category_price">¥ 1999</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>演示器</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-04-03/NEW_XL/spotlighth.jpg" />
+                                    <p class="category_info">Spotlight</p>
+                                    <p class="category_price">¥ 749</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/logitech/xx/CC2000eR800M330K780-01.png" />
+                                    <p class="category_info">CC2000e+R800+M330+K780</p>
+                                    <p class="category_price">¥ 4214</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/logitech/xx/CC3500eSpotlightMK545-01.png" />
+                                    <p class="category_info">CC3500e+扩展麦+Spotlight+MK545</p>
+                                    <p class="category_price">¥ 11198</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135755_1714.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>罗技G飞行模拟器</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/logitech/xx/Flight Instrument Panelzy-01.png" />
+                                    <p class="category_info">Flight Instrument Pane</p>
+                                    <p class="category_price">¥ 1299</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/logitech/xx/Flight Radio Paneljsc-01.png" />
+                                    <p class="category_info"> Flight Radio Panel</p>
+                                    <p class="category_price">¥ 1099</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/logitech/xx/Flight Multi Paneldh-01.png" />
+                                    <p class="category_info">Flight Multi Panel</p>
+                                    <p class="category_price">¥ 1099</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>方向盘</h3>
+                        <a href="">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/DiRT-01.png" />
+                                    <p class="category_info"> Playseat游戏座椅</p>
+                                    <p class="category_price">¥ 3499</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/DiRT-01.png" />
+                                    <p class="category_info"> Playseat游戏座椅</p>
+                                    <p class="category_price">¥ 3499</p>
+                                </a>
+                            </div>
+                            <div class="category_box swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/F1B01.png" />
+                                    <p class="category_info">Playseat F1</p>
+                                    <p class="category_price">¥ 7999</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135636_3208.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>平板电脑周边</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-15/NEW_XL/ik1053-01.png" />
+                                    <p class="category_info"> iK1053</p>
+                                    <p class="category_price">¥ 699</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-04-18/NEW_XL/K480白.png" />
+                                    <p class="category_info">K480蓝牙键盘</p>
+                                    <p class="category_price">¥ 249</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <a href="#" class="top_img">
+                    <img src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-14/20190214135435_2863.jpg">
+                </a>
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>游戏鼠标垫</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img src="https://images.wincheers.net/UpLoad/logitech/xx/G903G910sbd-01.png" />
+                                    <p class="category_info">G903+G910+充电鼠标垫</p>
+                                    <p class="category_price">¥ 2698</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-02-18/NEW_XL/G440-01.png" />
+                                    <p class="category_info">G440鼠标垫</p>
+                                    <p class="category_price">¥ 149</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hidden">
+                <div class="category_list">
+                    <div class="category_tit">
+                        <h3>摄像头配件</h3>
+                        <a href="#">
+                            <span class="mui-icon mui-icon-arrowright"></span>
+                        </a>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="category_box  swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-04-25/NEW_XL/CC4900e-03.png" />
+                                    <p class="category_info">CC4900e电源分线器</p>
+                                    <p class="category_price">¥ 349</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-04-25/NEW_XL/CC4900e-02.png" />
+                                    <p class="category_info">CC4900e遥控器</p>
+                                    <p class="category_price">¥ 289</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="category_container">
+                                    <img
+                                        src="https://images.wincheers.net/UpLoad/Web/ProductImg/2019-04-25/NEW_XL/CC4900e-01.png" />
+                                    <p class="category_info">CC4900e USB线</p>
+                                    <p class="category_price">¥ 149</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category_container category_more">
+                                    <a href="">查看更多 》</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
-
+    <div class="x-nav-footer">
+        <div class="x-foot-list ">
+            <a href="index.html">
+                <i class="mui-icon iconfont icon-shouye"></i>
+                <p>首页</p>
+            </a>
+        </div>
+        <div class="x-foot-list x-active">
+            <a href="javascript:void(0)">
+                <i class="mui-icon iconfont icon-fenlei"></i>
+                <p>分类</p>
+            </a>
+        </div>
+        <div class="x-foot-list">
+            <a href="javascript:void(0)">
+                <i class="mui-icon iconfont icon-yduifaxian"></i>
+                <p>发现</p>
+            </a>
+        </div>
+        <div class="x-foot-list">
+            <a href="javascript:void(0)">
+                <i class="mui-icon iconfont icon-gouwuche"></i>
+                <p>购物车</p>
+            </a>
+        </div>
+        <div class="x-foot-list">
+            <a href="javascript:void(0)">
+                <i class="mui-icon iconfont icon-wode"></i>
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
     <script src="js/mui.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
@@ -130,9 +936,34 @@
             getWidth();
         };
 
-        var mySwiper = new Swiper('.swiper-container', {
-            freeModeMomentum: false,
-        })
+        var top_h = document.getElementsByClassName("m-search")[0].clientHeight;
+        var mid_h = document.getElementById("tabSwitch");
+        var btm_h = document.getElementsByClassName("x-nav-footer")[0].clientHeight;
+        var Aheight = screen.height - top_h - btm_h;
+        mid_h.style.height = Aheight / 100 + "rem";
+
+        var mySwiper = new Swiper(".swiper-container", {
+            slidesPerView: 2,
+            slidePerColumn: 2,
+            autoplayDisableOnInteraction: false,
+            observer: true, //修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true //修改swiper的父元素时，自动初始化swiper
+        });
+
+        var item = document.getElementById("tab_types").children;
+        var content = document.getElementById("tab_content").children;
+
+        for (var i = 0; i < item.length; i++) {
+            item[i].index = i;
+            item[i].onclick = function () {
+                for (var j = 0; j < content.length; j++) {
+                    content[j].classList.add('hidden')
+                    item[j].classList.remove('tab_active');
+                }
+                content[this.index].classList.remove('hidden');
+                this.classList.add('tab_active');
+            }
+        }
     </script>
 </body>
 
